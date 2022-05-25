@@ -22,8 +22,8 @@ export default {
 		<RouterLink :to="this.to" >
 			{{text}}
 		</RouterLink>
+		<slot name="dropdowns" id="dropdown-cnt" v-if="hover"></slot>
 	</div>
-	<slot name="dropdowns" id="dropdown-cnt" v-if="hover"></slot>
 </template>
 
 <style scoped>

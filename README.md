@@ -1,6 +1,24 @@
 # crypto
 
-This template should help get you started developing with Vue 3 in Vite.
+Requires .env in root directory
+
+example .env:
+```
+VITE_PANCAKE_API_URL = https://api.pancakeswap.info/api/v2
+VITE_PANCAKE_API_TOKENS_URI = /tokens
+
+VITE_GECKO_API = https://api.coingecko.com/api/v3
+
+VITE_GECKO_API_COINS_MARKET_URI = /coins/markets
+VITE_GECKO_API_COINS_MARKET_FIAT = eur
+VITE_GECKO_API_COINS_MARKET_TOKENS_PER_PAGE = 50
+VITE_GECKO_API_COINS_MARKET_STARTING_NUMBER_OF_PAGES = 1
+
+VITE_GECKO_API_COINS_LIST_URI = /coins/list
+VITE_GECKO_API_COINS_LIST_INCLUDE_PLATFORM = true
+```
+
+You can check the variables that exist in the src/env.d.ts file
 
 ## Recommended IDE Setup
 

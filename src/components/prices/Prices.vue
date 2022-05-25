@@ -12,6 +12,7 @@ export default {
 	},
 	data() {
 		return {
+			error: "",
 			tokens: {} as geckoCoinsMarket[],
 			updateTime: 10000,
 			pancake: {
@@ -64,6 +65,7 @@ export default {
 				}
 			} catch (error) {
 				console.log(error);
+				this.error = error as string;
 			}
 			this.tokens = tokens;
 		}
@@ -72,5 +74,6 @@ export default {
 </script>
 
 <template>
+	<span v-if="this.error">There seems to be an error: <a>{{this.error}}</a></span>
 	<PriceItem v-for="(token, index) in tokens" :token="token" :key="index" />
 </template>

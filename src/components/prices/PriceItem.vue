@@ -41,7 +41,7 @@ export default {
 <template>
 	<div class="item" @click="this.show = !this.show">
 		<img :src="this.token.image">
-		<i class='fas fa-angle-down' />
+		<!-- <i class='fas fa-angle-down' /> -->
 		<div class="info">
 			<h3>{{ this.token.name }} [{{ this.token.symbol.toUpperCase() }}]</h3>
 			<span class="detail">Last Update:</span> {{this.timeSinceLastUpdate}}s<br/>
@@ -87,6 +87,11 @@ h3 {
 	font-weight: 500;
 	margin-bottom: 0.4rem;
 	color: var(--color-heading);
+	transition: 0.3s;
+}
+
+.item:hover h3{
+	color: var(--color-text)
 }
 
 img{

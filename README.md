@@ -1,5 +1,7 @@
 # crypto
 
+## WORK IN PROGRESS, ONLY THE "PRICES" TAB WORKS
+
 Requires .env in root directory
 
 example .env:

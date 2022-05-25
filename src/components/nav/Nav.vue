@@ -27,7 +27,7 @@ export default {
 		<NavItem to="/stats" text="Stats" />
 		<NavItem to="/prices" text="Prices" >
 			<template #dropdowns>
-				<RouterLink to="/pussy">pussy</RouterLink>
+				<RouterLink to="/sub-example">sub-example</RouterLink>
 			</template>
 		</NavItem>
 		<NavItem to="/about" text="About" />

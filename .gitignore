@@ -15,7 +15,6 @@ coverage
 *.local
 
 boiler-plate
-.env
 .vscode
 
 /cypress/videos/
